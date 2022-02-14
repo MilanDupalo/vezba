@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Audiowide", sans-serif;
+}
+
+.container {
+  width: 1208px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  width: 100%;
+  border-radius: 100px;
+  height: 3px;
+  background: rgb(68, 68, 68);
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 956px;
+  }
+}
+
+@media (min-width: 835px) and (max-width: 970px) {
+  .container {
+    width: 98%;
+  }
+
+  @media screen and (max-width: 834px) {
+    .container {
+      width: 784px;
+    }
+  }
+
+  @media screen and (max-width: 744px) {
+    .container {
+      width: 712px;
+    }
+  }
+
+  @media (min-width: 220px) and (max-width: 744px) {
+    .container {
+      width: 100%;
+    }
+  }
+}
