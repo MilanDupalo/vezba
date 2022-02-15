@@ -35,6 +35,10 @@
   margin-top: 40px;
 }
 
+i {
+  color: rgb(59, 59, 59);
+}
+
 @media (min-width: 1024px) and (max-width: 1200px) {
   .container {
     width: 1000px;
